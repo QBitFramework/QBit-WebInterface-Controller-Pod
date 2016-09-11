@@ -6,6 +6,11 @@ use base qw(QBit::Application::Model);
 
 use Pod::Checker;
 
+# Ugly hack to disable checking internal links
+no warnings 'redefine';
+no strict 'refs';
+*{'Pod::Checker::hyperlink'} = sub { };
+
 sub clear_path {
     my ($path) = @_;
 
@@ -159,10 +164,5 @@ sub resolve_pod_page_link {
 
     return $url;
 }
-
-package Pod::Checker;
-no warnings 'redefine';
-
-sub hyperlink { }    # Ugly hack to disable checking internal links
 
 1;

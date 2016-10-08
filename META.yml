@@ -13,10 +13,12 @@ meta-spec:
   version: 1.4
 name: QBit-WebInterface-Controller-Pod
 requires:
+  Pod::Checker: 0
   Pod::Simple::HTML: 0
   QBit::Application::Model: 0
   QBit::WebInterface::Controller: 0
   base: 0
   qbit: 0
+  strict: 0
   warnings: 0
-version: 0.003
+version: 0.004

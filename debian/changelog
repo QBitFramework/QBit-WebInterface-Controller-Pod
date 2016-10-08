@@ -1,3 +1,9 @@
+libqbit-webinterface-controller-pod-perl (0.004) raring; urgency=low
+
+  * fix permission missing
+
+ -- Igor Sverdlov <igor-sverdlov@mail.ru>  Sat, 08 Oct 2016 16:47:28 +0300
+
 libqbit-webinterface-controller-pod-perl (0.003) raring; urgency=low
 
   * upload to cpan

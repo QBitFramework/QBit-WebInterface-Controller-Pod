@@ -16,14 +16,16 @@ my %WriteMakefileArgs = (
   "LICENSE" => "gpl",
   "NAME" => "QBit::WebInterface::Controller::Pod",
   "PREREQ_PM" => {
+    "Pod::Checker" => 0,
     "Pod::Simple::HTML" => 0,
     "QBit::Application::Model" => 0,
     "QBit::WebInterface::Controller" => 0,
     "base" => 0,
     "qbit" => 0,
+    "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.003",
+  "VERSION" => "0.004",
   "test" => {
     "TESTS" => ""
   }
@@ -31,11 +33,13 @@ my %WriteMakefileArgs = (
 
 
 my %FallbackPrereqs = (
+  "Pod::Checker" => 0,
   "Pod::Simple::HTML" => 0,
   "QBit::Application::Model" => 0,
   "QBit::WebInterface::Controller" => 0,
   "base" => 0,
   "qbit" => 0,
+  "strict" => 0,
   "warnings" => 0
 );
 
